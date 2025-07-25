@@ -1,0 +1,98 @@
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fff0e5, #ffe9cc);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f28322;
+  padding: 20px 50px;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.nav-menu a:hover {
+  background-color: #e36e04;
+}
+
+/* Record Container */
+.record-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.record-container h2 {
+  color: #f28322;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.no-records {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+}
+
+/* Table Style */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.booking-table th {
+  background-color: #f28322;
+  color: white;
+}
+
+.booking-table td {
+  background-color: #fffaf3;
+}

@@ -1,0 +1,195 @@
+/* General Reset & Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fff0e5, #ffe9cc);
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f28322;
+  padding: 20px 50px;
+  position: relative;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #e36e04;
+}
+
+.logout-btn {
+  background-color: #ffffff20;
+}
+
+/* Container */
+.booking-container,
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2.section-title {
+  color: #f28322;
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f28322;
+  padding-bottom: 8px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+button,
+.btn {
+  padding: 12px 20px;
+  background-color: #f28322;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #e36e04;
+}
+
+.btn-secondary {
+  background-color: #999;
+}
+
+.btn-secondary:hover {
+  background-color: #777;
+}
+
+/* Success and Error Messages */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Table for Availability */
+.availability-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.availability-table th,
+.availability-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.availability-table th {
+  background-color: #f28322;
+  color: white;
+  font-size: 16px;
+}
+
+.availability-table tr:nth-child(even) td {
+  background-color: #fff5e8;
+}
+
+.availability-table td {
+  background-color: #fffaf3;
+}
+
+/* Button Group */
+.button-group,
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}

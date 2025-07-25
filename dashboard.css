@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf5;
+background: linear-gradient(to right, #fff0e5, #ffe9cc);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f28322;
+  padding: 20px 50px;
+  position: relative;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #e36e04;
+}
+
+.logout-btn {
+  background-color: #ffffff20;
+}
+
+.dashboard-container {
+  padding: 60px;
+  text-align: center;
+}
+
+.dashboard-container h1 {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dashboard-container p {
+  font-size: 20px;
+  color: #666;
+}
+
+.dashboard-card {
+  background: linear-gradient(to bottom right, #fff5eb, #ffe6cc);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #f7c28c;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.02);
+}
+
+.dashboard-card h2 {
+  font-size: 36px;
+  color: #d66f00;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.dashboard-card p#datetime {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.dashboard-card .quote {
+  font-size: 22px;
+  color: #555;
+  font-style: italic;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #f3a257;
+}
+

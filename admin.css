@@ -1,0 +1,155 @@
+/* Overall Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-wrapper {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #f28322;
+  padding: 25px 20px;
+  min-height: 100vh;
+  color: white;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 18px 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: #e36e04;
+}
+
+.logout {
+  color: #ffe0e0;
+}
+
+/* Content Area */
+.dashboard-content {
+  flex: 1;
+  padding: 40px;
+}
+
+h2 {
+  color: #f28322;
+  margin-bottom: 30px;
+}
+
+.stats {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.filter-form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filter-form label {
+  font-weight: bold;
+}
+
+.filter-form select,
+.filter-form button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filter-form button {
+  background-color: #f28322;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-form button:hover {
+  background-color: #e36e04;
+}
+
+/* Table Styles */
+.table-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+thead {
+  background-color: #f28322;
+  color: white;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fef5ee;
+}
+
+tbody tr:hover {
+  background-color: #ffe3c4;
+  transition: background-color 0.2s;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
